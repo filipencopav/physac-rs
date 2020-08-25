@@ -17,4 +17,5 @@ pub trait VecImpl {
 	fn plus(&self, other: &Self) -> Self;
 	fn minus(&self, other: &Self) -> Self;
 	fn dot(&self, other: &Self) -> f32;
+	fn zero() -> Self;
 }

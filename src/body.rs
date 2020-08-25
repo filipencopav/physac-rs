@@ -1,10 +1,18 @@
 use crate::VecImpl;
 use crate::matrix::Mat2;
 
-struct PolygonData<Vec2d: VecImpl> {
+pub struct PolygonData<Vec2d: VecImpl> {
 	vertex_count: usize,
 	positions: Vec2d,
 	normals: Vec2d,
+}
+
+impl<Vec2d> PolygonData<Vec2d>
+  where Vec2d: VecImpl
+{
+	pub fn create_random(radius: f32, sides_count: usize) -> Self {
+
+	}
 }
 
 enum Shape<Vec2d: VecImpl> {
